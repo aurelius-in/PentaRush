@@ -163,13 +163,14 @@ function gameLoop() {
   document.getElementById('level').innerText = `Level: ${level}`;
 
   moveDown();
-  requestAnimationFrame(gameLoop);
+  requestAnimationFrame(gameLoop); // Keep calling gameLoop
 }
 
 function startGame() {
   createShape();
-  gameLoop();
+  requestAnimationFrame(gameLoop); // Start the game loop
 }
+
 
 function handleTouchStart(event) {
   touchStartX = event.touches[0].clientX;
