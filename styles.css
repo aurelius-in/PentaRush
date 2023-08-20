@@ -1,0 +1,102 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+#game-container {
+  width: 100%;
+  max-width: calc(100% - 2 * BLOCK_SIZE); /* Adjust the width */
+  padding: 0 BLOCK_SIZE; /* One block-width padding on the left and right */
+}
+
+#game-title {
+  margin: 10px 0; /* Adjust margin as needed */
+  text-align: center;
+  font-size: 2rem;
+}
+
+#timer {
+  margin: 5px 0; /* Adjust margin as needed */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0; /* Adjust margin as needed */
+    padding: 0 5px; /* Add padding to the left and right if needed */
+}
+
+
+#game-canvas {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+#score, #level {
+  margin: 8px; /* Adjust margin as needed */
+  text-align: center;
+}
+
+#score, #level, .pause-button {
+    margin-top: 15px;
+}
+
+#board {
+    margin-top: 30px;
+    border: 3px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.control-button {
+    padding: 0; /* Remove padding */
+    background-color: #add8e6; /* Light blue color */
+    color: #000000; /* Black text color */
+    border: none;
+    font-size: 2rem; /* Increase font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px; /* Add margin to the left and right of the buttons */
+}
+
+.control-button:hover {
+    background-color: #90cfe0; /* Darker shade of blue on hover */
+}
+    
+.start-button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+
+#score, #level {
+    text-align: center;
+    margin-top: 15px;
+}
